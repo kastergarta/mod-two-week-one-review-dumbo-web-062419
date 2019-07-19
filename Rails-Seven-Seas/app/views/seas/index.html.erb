@@ -1,0 +1,7 @@
+<h1> All Seas</h1>
+
+<% @seas.each do |s| %>
+<%= link_to s.name, sea_path(s) %><br>
+<% end  %>
+
+<%= link_to "Create a Sea", new_sea_path(@sea) %>
